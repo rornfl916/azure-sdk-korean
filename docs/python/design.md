@@ -15,25 +15,30 @@ The Azure SDK should be designed to enhance the productivity of developers conne
 #### 관습적 (Idiomatic)
 
 * SDK는 대상 언어에 대한 디자인 가이드라인 및 규칙을 따라야 합니다. 해당 언어의 개발자가 자연스럽게 받아들일 수 있어야 합니다.
-* We embrace the ecosystem with its strengths and its flaws.
-* We work with the ecosystem to improve it for all developers.
+* 우리는 생태계의 장점과 단점을 함께 포괄합니다.
+* 우리는 모든 개발자들을 위한 생태계를 개선시키기 위해 협력합니다.
 
-#### Consistent
+#### 일관성 (Consistent)
 
-* Client libraries should be consistent within the language, consistent with the service and consistent between all target languages. In cases of conflict, consistency within the language is the highest priority and consistency between all target languages is the lowest priority.
-* Service-agnostic concepts such as logging, HTTP communication, and error handling should be consistent. The developer should not have to relearn service-agnostic concepts as they move between client libraries.
-* Consistency of terminology between the client library and the service is a good thing that aids in diagnosability.
-* All differences between the service and client library must have a good (articulated) reason for existing, rooted in idiomatic usage rather than whim.
-* The Azure SDK for each target language feels like a single product developed by a single team.
-* There should be feature parity across target languages. This is more important than feature parity with the service.
+* 클라이언트 라이브러리는 언어 내에서 일관성이 있어야 하며, 서비스와 대상 언어 간의 일관성이 있어야 합니다. 충돌이 발생하면, 우선 언어 내의 일관성을 가장 높은 우선순위를 가지고, 모든 대상의 언어 간의 일관성을 가장 낮은 우선순위로 가집니다.
+* 로깅, HTTP 통신, 예외 처리 같은 서비스-어그노스틱(Service-agnostic)은 일관성이 있어야 하며 개발자는 클라이언트 라이브러리들 간에 이동할 때 서비스-어그노스틱(Service-agnostic)을 다시 학습할 필요가 없어야 합니다.
+* 클라이언트 라이브러리와 서비스 사이에 용어의 일관성은 분석에 도움이 된다.
+* 서비스와 클라이언트 라이브러리 사이의 모든 차이점은 변덕보다는 관용적인 사용에 뿌리를 둔 현존하는 타당한(분명히 표현된) 이유가 있어야 합니다.
+* 각 대상 언어에 대한 Azure SDK는 하나의 팀이 개발한 하나의 제품처럼 느껴져야 합니다.
+* 대상 언어 간에 기능 동등성이 있어야 합니다. 이것은 서비스와의 기능 동등성보다 더 중요합니다.
 
 #### 접근하기쉽게
 
 * 우리는 지원되는 기술들의 전문가로 우리의 고객들과 개발자들은 전문성을 가질 필요가 없습니다.
 * 개발자들은 Azure 서비스를 성공적으로 사용하기 쉽게 해주는 좋은 문서(튜토리얼, 방법 문서, 샘플들 및 API 문서)를 찾아야 합니다.
 * 모범 사례를 구현하는 예측 가능한 기본값들을 사용함으로써 쉽게 시작할 수 있습니다. 점진적인 개념의 공개에 대해 생각해보세요.
+<<<<<<< HEAD
 * The SDK should be easily acquired through the most normal mechanisms in the target language and ecosystem.
 * Developers can be overwhelmed when learning new service concepts. The core use cases should be discoverable.
+=======
+* SDK는 목표하는 언어와 생태계 안에서 가장 평범한 방법을 통해 쉽게 얻을 수 있어야 합니다.
+* 개발자들은 새로운 서비스 개념을 배울 때 압도당할 수 있습니다. 핵심 사용 사례들은 쉽게 발견할 수 있어야 합니다.
+>>>>>>> 9df992e7ba65ae404ed821cd04895df38ca05582
 
 #### Diagnosable
 
